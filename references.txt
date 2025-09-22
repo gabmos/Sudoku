@@ -1,0 +1,112 @@
+Online References Used for Sudoku Validator Project
+====================================================
+
+Course: Introduction to Racket & Functional Programming
+Assignment: Sudoku Board Validation
+Student: [Your Name Here]
+
+This document lists all the online resources I consulted while working on this
+functional programming assignment. As someone new to Racket, these references
+were essential for understanding the language and implementing the solution.
+
+PRIMARY REFERENCES
+==================
+
+1. Racket Documentation - Main Language Reference
+   - Website: https://docs.racket-lang.org/
+   - Purpose: General language syntax and core concepts
+   - How it helped: This was my go-to reference for understanding basic Racket
+     syntax, function definitions, and language structure. As someone coming
+     from imperative programming languages, this helped me understand the
+     functional programming paradigm.
+   - Specific sections used: Basic syntax, data types, and function definitions
+
+2. Racket Guide - Functional Programming Concepts
+   - Website: https://docs.racket-lang.org/guide/
+   - Purpose: Understanding functional programming patterns in Racket
+   - How it helped: This was crucial for learning how to think functionally
+     rather than imperatively. It helped me understand higher-order functions
+     and how to structure programs using functional programming principles.
+   - Key concepts learned: map, andmap, for/list, lambda expressions, and
+     functional iteration patterns
+
+3. Racket Reference Manual - List Operations
+   - Website: https://docs.racket-lang.org/reference/pairs.html
+   - Purpose: Understanding list manipulation functions
+   - How it helped: Since Sudoku boards are represented as lists of lists,
+     understanding list operations was essential. This reference helped me
+     learn how to extract elements, transform lists, and work with nested
+     data structures.
+   - Functions used: list-ref, map, andmap, remove-duplicates, length
+
+4. Racket Reference Manual - Control Flow
+   - Website: https://docs.racket-lang.org/reference/if.html
+   - Purpose: Understanding conditional expressions and control flow
+   - How it helped: Learning how to structure conditional logic in Racket
+     was important for the validation logic. This reference helped me
+     understand the cond and if constructs.
+   - Constructs used: cond, if, and, or
+
+5. Racket Reference Manual - Iteration and Loops
+   - Website: https://docs.racket-lang.org/reference/for.html
+   - Purpose: Understanding iteration constructs in Racket
+   - How it helped: The for/list and for*/list constructs were essential
+     for extracting subgrids and processing the board data. This reference
+     helped me understand how to use these powerful iteration constructs.
+   - Constructs used: for/list, for*/list, range
+
+6. Racket Reference Manual - String Operations
+   - Website: https://docs.racket-lang.org/reference/strings.html
+   - Purpose: Understanding string manipulation for input parsing
+   - How it helped: Since input comes as strings that need to be parsed
+     into numbers, understanding string operations was necessary.
+   - Functions used: string-split, string->number
+
+7. Racket Reference Manual - Input/Output Operations
+   - Website: https://docs.racket-lang.org/reference/input.html
+   - Purpose: Understanding how to read from standard input
+   - How it helped: The assignment required reading from standard input
+     in a specific format, so understanding I/O operations was essential.
+   - Functions used: read-line, displayln
+
+8. Racket Reference Manual - Module System
+   - Website: https://docs.racket-lang.org/reference/module.html
+   - Purpose: Understanding how to structure programs with modules
+   - How it helped: Learning how to use module+ for main functions and
+     test modules was important for proper program organization.
+   - Constructs used: module+, main function definition
+
+LEARNING REFLECTIONS
+====================
+
+As a computer science student, working with these references taught me several
+important lessons:
+
+1. Functional Programming Paradigm: Coming from imperative languages, learning
+   to think functionally was challenging but rewarding. The references helped
+   me understand how to use higher-order functions and avoid mutable state.
+
+2. Language Documentation Quality: Racket's documentation is excellent and
+   well-structured. The combination of guides and reference manuals made it
+   easy to learn both concepts and specific syntax.
+
+3. Problem-Solving Approach: The functional approach to solving the Sudoku
+   validation problem was elegant and concise. Instead of nested loops and
+   mutable variables, I used map operations and recursive functions.
+
+4. Code Organization: The module system in Racket helped me organize the code
+   logically, separating concerns between validation logic, input parsing,
+   and main program execution.
+
+INDEPENDENT WORK
+================
+
+While these references were essential for learning Racket syntax and concepts,
+the core algorithm design and problem-solving approach were developed
+independently. The Sudoku validation logic, error detection strategy, and
+overall program structure were my own work, informed by the functional
+programming principles learned from these references.
+
+The references served as a learning tool rather than a source of code to copy,
+helping me understand how to implement my own solutions using Racket's
+functional programming features.
