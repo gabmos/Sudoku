@@ -1,9 +1,8 @@
 Online References Used for Sudoku Validator Project
 ====================================================
 
-Course: Introduction to Racket & Functional Programming
-Assignment: Sudoku Board Validation
-Student: [Your Name Here]
+Assignment: Introduction to Racket & Functional Programming - Sudoku Board Validation
+Student: Gabriel Morais
 
 This document lists all the online resources I consulted while working on this
 functional programming assignment. As someone new to Racket, these references
