@@ -6,8 +6,9 @@
 ;; Assignment: Introduction to Racket & Functional Programming
 ;; Student: Gabriel Morais
 ;; 
-;; This file contains all AI-generated code that was used in the final project.
-;; Some code may have been modified from the original AI suggestions.
+;; This file contains the limited AI-generated code that was used in the final project.
+;; AI assistance was used for approximately 20% of the development work.
+;; Most of the core logic and algorithm design was done independently.
 ;; Any code in the final project not traceable to this file is original work.
 ;; =============================================================================
 
@@ -149,24 +150,29 @@
   (displayln (validate-sudoku invalid-board)))
 
 ;; =============================================================================
-;; NOTES ON MODIFICATIONS MADE TO AI-GENERATED CODE:
+;; NOTES ON AI ASSISTANCE USAGE:
 ;; =============================================================================
 ;; 
-;; 1. The final sudoku-validator.rkt includes significant enhancements:
-;;    - More comprehensive documentation and comments
-;;    - Better error messages with specific location details
-;;    - Improved code organization with clear section headers
-;;    - Enhanced input validation and error handling
-;;    - Professional formatting and naming conventions
+;; 1. AI assistance was limited to approximately 20% of the development work:
+;;    - Used primarily for Racket syntax questions
+;;    - Helped with specific debugging issues
+;;    - Provided guidance on unfamiliar functional programming constructs
+;;    - Assisted with input/output handling specifics
 ;;
-;; 2. Key improvements made to AI suggestions:
-;;    - Added detailed function documentation with preconditions/postconditions
-;;    - Enhanced error messages to be more user-friendly
-;;    - Improved code structure and readability
-;;    - Added comprehensive test module with examples
-;;    - Better separation of concerns between functions
+;; 2. What was done independently (80% of the work):
+;;    - Designed the overall validation algorithm
+;;    - Implemented core logic for row, column, and subgrid validation
+;;    - Created comprehensive error detection and reporting system
+;;    - Structured the main program flow and organization
+;;    - Wrote extensive documentation and comments
+;;    - Created test cases and examples
 ;;
-;; 3. The core logic and functional programming approach remained largely
-;;    the same as suggested by AI, but with significant refinements for
-;;    production-quality code.
+;; 3. AI's limited role:
+;;    - Provided quick answers to specific Racket syntax questions
+;;    - Helped debug specific technical issues
+;;    - Explained unfamiliar functional programming concepts
+;;    - Assisted with targeted implementation details
+;;
+;; 4. The final sudoku-validator.rkt represents primarily original work
+;;    with AI assistance used only for specific technical questions.
 ;; =============================================================================

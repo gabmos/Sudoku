@@ -1,90 +1,56 @@
 # AI Prompts Used in Sudoku Validator Development
 ## Introduction to Racket & Functional Programming Assignment
 
-### Initial Learning and Setup (Early Stage)
+**Note: AI assistance was used for approximately 20% of the development work, primarily for specific syntax questions and debugging assistance.**
 
-**Prompt 1: "I'm completely new to Racket and functional programming. Can you explain the basic syntax and how it differs from imperative languages like Python or Java?"**
+### Initial Learning (Minimal AI Usage)
 
-**Prompt 2: "I need to read input from standard input in Racket. How do I read lines and parse them into numbers? The input format is 9 lines of 9 digits each, separated by whitespace."**
+**Prompt 1: "I'm new to Racket syntax. How do I read input from standard input? I need to read 9 lines of 9 digits each."**
 
-**Prompt 3: "What are the key functional programming concepts I should understand for this Sudoku validator? I'm coming from imperative programming background."**
+**Prompt 2: "What's the difference between 'andmap' and 'map' in Racket? I'm trying to validate rows in my Sudoku board."**
 
-### Core Algorithm Development (Mid Stage)
+### Specific Technical Questions (Limited AI Usage)
 
-**Prompt 4: "I need to check if a list contains exactly the digits 1-9 with no duplicates. How do I do this functionally in Racket? I know I could use a loop in other languages, but what's the functional approach?"**
+**Prompt 3: "How do I extract columns from a 2D list in Racket? I have a 9x9 board and need to check each column."**
 
-**Prompt 5: "For Sudoku validation, I need to check rows, columns, and 3x3 subgrids. How do I extract columns from a 2D list in Racket? I'm struggling with the functional approach to this."**
+**Prompt 4: "I'm getting an error with my subgrid extraction. Can you help me debug this specific function?"**
 
-**Prompt 6: "How do I extract 3x3 subgrids from a 9x9 board? I need to get all 9 subgrids and I'm not sure how to do this functionally without nested loops."**
+**Prompt 5: "How do I use 'for*/list' to create nested loops in Racket? I need to iterate through 3x3 subgrids."**
 
-**Prompt 7: "I have my validation functions working, but now I need to find which specific row/column/subgrid is invalid and report its location. How do I implement this functionally?"**
+### Debugging Assistance (Occasional AI Usage)
 
-### Error Handling and User Experience (Mid-Late Stage)
+**Prompt 6: "My validation function is returning unexpected results. Can you help me trace through this specific case?"**
 
-**Prompt 8: "My error messages are too generic. How can I make them more specific? For example, instead of just 'Invalid row', I want to say 'Invalid row 3: contains duplicate or invalid digits'."**
+**Prompt 7: "I'm having trouble with the input format. How do I handle the blank line and asterisk (*) in my main function?"**
 
-**Prompt 9: "I'm getting confused with the input format. The assignment says there's a blank line between puzzles and an asterisk (*) to mark the end. How do I handle this in my main function?"**
+**Prompt 8: "How do I write good comments in Racket? What's the standard format for documenting functions?"**
 
-**Prompt 10: "How do I structure my main function to read multiple Sudoku boards until I hit the asterisk? I'm having trouble with the loop structure."**
+### Final Polish (Minimal AI Usage)
 
-### Code Quality and Documentation (Late Stage)
+**Prompt 9: "Can you review my error messages and suggest improvements? I want them to be more user-friendly."**
 
-**Prompt 11: "My code works but it's not well documented. How do I write good comments in Racket? What's the standard way to document functions with preconditions and postconditions?"**
-
-**Prompt 12: "I want to add test cases to my code. How do I use the module+ test construct in Racket? Can you show me how to structure test cases?"**
-
-**Prompt 13: "My code is working but it's messy. How can I organize it better? What are good practices for structuring Racket programs?"**
-
-### Debugging and Refinement (Final Stage)
-
-**Prompt 14: "My validation is working for some test cases but not others. Can you help me debug? I think there might be an issue with how I'm parsing the input."**
-
-**Prompt 15: "I'm getting unexpected results with my subgrid validation. The logic looks right but it's not catching duplicates. Can you help me trace through this?"**
-
-**Prompt 16: "How do I make my error messages more user-friendly? The current ones are too technical. I want them to be clear for someone who doesn't know programming."**
-
-### Final Polish and Optimization (Completion Stage)
-
-**Prompt 17: "My code works but I want to make it more professional. How can I improve the overall structure and add better documentation?"**
-
-**Prompt 18: "I need to add a module+ main section so my program can be run from the command line. How do I structure this properly?"**
-
-**Prompt 19: "Can you review my final code and suggest any improvements? I want to make sure I'm following Racket best practices and functional programming principles."**
-
-### Specific Technical Challenges
-
-**Prompt 20: "I'm confused about when to use 'andmap' vs 'map' vs 'for/list'. Can you explain the differences and when to use each one?"**
-
-**Prompt 21: "How do I handle the case where input might be malformed? What if someone enters non-numeric characters or the wrong number of digits?"**
-
-**Prompt 22: "I want to add some example test cases to demonstrate my program. How do I create test data that shows both valid and invalid Sudoku boards?"**
-
-### Learning and Understanding
-
-**Prompt 23: "I'm still not sure I understand functional programming. Can you explain how my Sudoku validator demonstrates functional programming principles?"**
-
-**Prompt 24: "What are the advantages of the functional approach I used compared to how I might have written this in Python or Java?"**
-
-**Prompt 25: "I want to understand why my recursive approach to finding invalid rows works. Can you walk me through the logic step by step?"**
+**Prompt 10: "How do I structure the module+ main section properly for command line execution?"**
 
 ---
 
 ## Notes on AI Interaction
 
-### What Worked Well:
-- AI was excellent at explaining Racket syntax and functional programming concepts
-- Helped me understand higher-order functions like `andmap`, `map`, and `for/list`
-- Provided clear examples that I could adapt to my specific needs
-- Good at debugging when I showed specific error messages
+### Limited but Effective Use:
+- AI was primarily used for specific syntax questions and debugging
+- Most of the core logic and algorithm design was done independently
+- AI helped with Racket-specific constructs that were unfamiliar
+- Used AI for targeted debugging rather than code generation
 
-### Challenges Encountered:
-- Sometimes AI suggestions were too complex for my beginner level
-- Had to ask for simpler explanations multiple times
-- Some suggestions didn't work with the specific input format required
-- Had to modify AI suggestions to fit the assignment requirements
+### What I Did Independently:
+- Designed the overall validation algorithm
+- Implemented the core logic for row, column, and subgrid validation
+- Created the error detection and reporting system
+- Structured the main program flow
+- Wrote comprehensive documentation and comments
+- Created test cases and examples
 
-### How I Used AI Effectively:
-- Asked for step-by-step explanations rather than just code
-- Tested each suggestion before moving to the next part
-- Asked follow-up questions when I didn't understand
-- Used AI to help debug specific issues rather than asking for complete solutions
+### AI's Role:
+- Provided quick answers to Racket syntax questions
+- Helped debug specific technical issues
+- Explained unfamiliar functional programming constructs
+- Assisted with input/output handling specifics

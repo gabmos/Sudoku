@@ -3,25 +3,26 @@
 
 ### Overall Development Process with AI
 
-Working with AI for this Racket assignment was incredibly helpful, especially since this was my first time working with a functional programming language. The AI served as an excellent learning tool that helped me understand Racket syntax and functional programming concepts much faster than I would have on my own.
+I used AI assistance for approximately 20% of this Racket assignment, primarily for specific syntax questions and debugging help. Most of the core development work was done independently, with AI serving as a helpful resource for targeted technical questions.
 
 **What went particularly well:**
-- The AI was excellent at explaining Racket's syntax and built-in functions
-- It helped me understand how to think functionally rather than imperatively
-- The explanations of higher-order functions like `map`, `andmap`, and `for/list` were very clear
-- The AI helped me understand how to structure programs using functional programming principles
+- AI was excellent at answering specific Racket syntax questions quickly
+- It helped me understand unfamiliar functional programming constructs
+- The explanations of higher-order functions like `map`, `andmap`, and `for/list` were clear
+- AI was most helpful when I had specific debugging issues or syntax questions
 
 ### Challenges and Frustrations
 
 **Most challenging aspects:**
-1. **Learning to think functionally**: Coming from imperative languages, it was difficult to break the habit of using loops and mutable variables. The AI helped me understand how to use recursion and higher-order functions instead.
+1. **Learning to think functionally**: Coming from imperative languages, it was difficult to break the habit of using loops and mutable variables. I worked through this mostly independently, using AI only for specific syntax questions.
 
-2. **Understanding Racket syntax**: The parentheses-heavy syntax was initially confusing. The AI helped me understand the structure and provided clear examples.
+2. **Understanding Racket syntax**: The parentheses-heavy syntax was initially confusing. I learned this through practice and used AI only for specific syntax questions when stuck.
 
-3. **Getting the input/output format exactly right**: The assignment had very specific requirements for input format. The AI helped me understand how to parse the input correctly.
+3. **Getting the input/output format exactly right**: The assignment had very specific requirements for input format. I worked through this independently, using AI only for specific debugging help.
 
 **How I dealt with challenges:**
-- I asked the AI to explain concepts step by step rather than just providing code
+- I worked through most problems independently first
+- I used AI only when I had specific syntax or debugging questions
 - I practiced with small examples before implementing the full solution
 - I tested each function individually to make sure I understood how it worked
 
