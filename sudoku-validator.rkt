@@ -3,10 +3,8 @@
 ;; =============================================================================
 ;; SUDOKU VALIDATOR - FUNCTIONAL PROGRAMMING ASSIGNMENT
 ;; =============================================================================
-;; Author: [Student Name]
-;; Course: Introduction to Racket & Functional Programming
-;; Assignment: Sudoku Board Validation
-;;
+;; Author: Gabriel Morais
+;; Assignment: Introduction to Racket & Functional Programming - Sudoku Board Validation
 ;; This program validates 9x9 Sudoku boards according to the standard rules:
 ;; 1. Each digit from 1 to 9 appears exactly once in each row
 ;; 2. Each digit from 1 to 9 appears exactly once in each column
