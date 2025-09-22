@@ -15,7 +15,7 @@ This project implements a comprehensive Sudoku validator in Racket that validate
 1. **`sudoku-validator.rkt`** - Main Racket source code with full documentation
 2. **`test1.txt` through `test12.txt`** - Test cases using class-provided data
 3. **`ai-prompts.txt`** - Documentation of AI assistance used
-4. **`helper.rkt`** - Helper information
+4. **`helper.rkt`** - Documentation of help prompts used
 5. **`references.txt`** - List of online references consulted, other than class materials
 6. **`test-all.sh`** - Automated test script
 7. **`README.md`** - Usage instructions and project overview

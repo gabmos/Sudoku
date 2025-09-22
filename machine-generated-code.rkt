@@ -1,29 +1,33 @@
 #lang racket
 
 ;; =============================================================================
-;; CODE FOR SUDOKU VALIDATOR
+;; MACHINE-GENERATED CODE FOR SUDOKU VALIDATOR
 ;; =============================================================================
 ;; Assignment: Introduction to Racket & Functional Programming
 ;; Student: Gabriel Morais
+;; 
+;; This file contains all AI-generated code that was used in the final project.
+;; Some code may have been modified from the original AI suggestions.
+;; Any code in the final project not traceable to this file is original work.
 ;; =============================================================================
 
-;; Helper function to check if a list contains all digits 1-9 exactly once
+;; AI-generated helper function to check if a list contains all digits 1-9 exactly once
 (define (valid-digits? lst)
   (and (= (length lst) 9)
        (andmap (lambda (x) (and (number? x) (>= x 1) (<= x 9))) lst)
        (= (length (remove-duplicates lst)) 9)))
 
-;; Check if all rows are valid (each contains digits 1-9 exactly once)
+;; AI suggestion for row validation using andmap
 (define (valid-rows? board)
   (andmap valid-digits? board))
 
-;; Check if all columns are valid (each contains digits 1-9 exactly once)
+;; AI-generated column extraction and validation
 (define (valid-columns? board)
   (define (get-column board col)
     (map (lambda (row) (list-ref row col)) board))
   (andmap valid-digits? (map (lambda (col) (get-column board col)) (range 9))))
 
-;; Check if all 3x3 subgrids are valid (each contains digits 1-9 exactly once)
+;; AI suggestion for 3x3 subgrid extraction using for*/list
 (define (valid-subgrids? board)
   (define (get-subgrid board start-row start-col)
     (for*/list ([i (range 3)]
@@ -35,7 +39,7 @@
                       [j (range 0 9 3)])
             (get-subgrid board i j))))
 
-;; Find the first invalid row and return its index (0-based)
+;; AI-generated error detection functions
 (define (find-invalid-row board)
   (define (check-row board row-index)
     (if (>= row-index 9)
@@ -45,7 +49,6 @@
             row-index)))
   (check-row board 0))
 
-;; Find the first invalid column and return its index (0-based)
 (define (find-invalid-column board)
   (define (get-column board col)
     (map (lambda (row) (list-ref row col)) board))
@@ -57,7 +60,6 @@
             col-index)))
   (check-column board 0))
 
-;; Find the first invalid subgrid and return its coordinates (0-based)
 (define (find-invalid-subgrid board)
   (define (get-subgrid board start-row start-col)
     (for*/list ([i (range 3)]
@@ -74,7 +76,7 @@
                 (list row col)))))
   (check-subgrid board 0 0))
 
-;; Main validation function - returns #t if valid, error message if invalid
+;; AI-generated main validation function with error reporting
 (define (validate-sudoku board)
   (cond
     [(not (valid-rows? board))
@@ -94,19 +96,13 @@
                       ": contains duplicate or invalid digits"))]
     [else #t]))
 
-;; Parse input from a list of strings (each string is a row with 9 digits)
+;; AI suggestion for input parsing
 (define (parse-sudoku-board lines)
   (map (lambda (line)
          (map string->number (string-split line)))
        lines))
 
-;; Read and validate a single Sudoku board from input
-(define (process-sudoku-board)
-  (let* ([lines (for/list ([i 9]) (read-line))]
-         [board (parse-sudoku-board lines)])
-    (validate-sudoku board)))
-
-;; Main program - reads multiple boards until asterisk is found
+;; AI-generated main program structure
 (define (main)
   (let loop ([line (read-line)])
     (unless (equal? line "*")
@@ -119,7 +115,7 @@
       (read-line) ; skip blank line
       (loop (read-line)))))
 
-;; Example test cases
+;; AI-generated test cases
 (module+ test
   ;; Valid board
   (define valid-board
@@ -151,3 +147,26 @@
   
   (displayln "Testing invalid board:")
   (displayln (validate-sudoku invalid-board)))
+
+;; =============================================================================
+;; NOTES ON MODIFICATIONS MADE TO AI-GENERATED CODE:
+;; =============================================================================
+;; 
+;; 1. The final sudoku-validator.rkt includes significant enhancements:
+;;    - More comprehensive documentation and comments
+;;    - Better error messages with specific location details
+;;    - Improved code organization with clear section headers
+;;    - Enhanced input validation and error handling
+;;    - Professional formatting and naming conventions
+;;
+;; 2. Key improvements made to AI suggestions:
+;;    - Added detailed function documentation with preconditions/postconditions
+;;    - Enhanced error messages to be more user-friendly
+;;    - Improved code structure and readability
+;;    - Added comprehensive test module with examples
+;;    - Better separation of concerns between functions
+;;
+;; 3. The core logic and functional programming approach remained largely
+;;    the same as suggested by AI, but with significant refinements for
+;;    production-quality code.
+;; =============================================================================
